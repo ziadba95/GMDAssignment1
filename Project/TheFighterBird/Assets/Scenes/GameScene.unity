@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70f181a6ec4fe429499f6b2b0996a209, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7434871
+      value: 1.41
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 70f181a6ec4fe429499f6b2b0996a209, type: 3}
       propertyPath: m_LocalPosition.z
@@ -370,27 +370,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 430996226}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1227773881
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227773880}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!60 &1227773882
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -459,6 +438,52 @@ PolygonCollider2D:
       - {x: 0.45999998, y: -0.435}
       - {x: 0.59999996, y: -0.345}
       - {x: 0.7, y: -0.255}
+--- !u!114 &1227773884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227773880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e049d7071c20c8c4d8580de5b7d1fecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlyForce: {x: 0, y: 350}
+--- !u!50 &1227773885
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227773880}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1227773887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227773880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031f68f5df4fcef4ea24517195c69350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1954930226
 GameObject:
   m_ObjectHideFlags: 0
