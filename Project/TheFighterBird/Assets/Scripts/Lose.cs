@@ -10,15 +10,15 @@ public class Lose : MonoBehaviour
     {
         if (transform.position.y > 5.7)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (transform.position.y < -5)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
