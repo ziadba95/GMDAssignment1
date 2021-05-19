@@ -15,4 +15,11 @@ public class Fly : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coins"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
